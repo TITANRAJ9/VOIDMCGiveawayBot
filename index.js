@@ -369,7 +369,7 @@
                 const winnerText = result.winners.length > 0 ? result.winners.join(', ') : 'No valid participants';
 
                 const rerollEmbed = new EmbedBuilder()
-                    .setTitle(':VoidMC: GIVEAWAY REROLLED :VoidMC: ')
+                    .setTitle('🎉 GIVEAWAY REROLLED  ')
                     .setDescription(
                         `**Prize:** ${result.prize}\n` +
                         `**New Winners:** ${winnerText}`
