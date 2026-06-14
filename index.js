@@ -323,7 +323,7 @@
 
                 const embed = createGiveawayEmbed(duration, prize, winners);
                 const giveawayMessage = await channel.send({ embeds: [embed] });
-                await giveawayMessage.react('🎉');
+                await giveawayMessage.react(':VoidMC:');
 
                 const timeout = setTimeout(async () => {
                     await endGiveaway(giveawayMessage.id, channel);
@@ -369,7 +369,7 @@
                 const winnerText = result.winners.length > 0 ? result.winners.join(', ') : 'No valid participants';
 
                 const rerollEmbed = new EmbedBuilder()
-                    .setTitle('🎉 GIVEAWAY REROLLED 🎉')
+                    .setTitle(':VoidMC: GIVEAWAY REROLLED :VoidMC: ')
                     .setDescription(
                         `**Prize:** ${result.prize}\n` +
                         `**New Winners:** ${winnerText}`
